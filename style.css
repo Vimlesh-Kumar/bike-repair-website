@@ -1,9 +1,10 @@
 html {
     height: 100%;
+    background-image: linear-gradient(#FC5E55, #FA4083);
 }
 
 body {
-    background-image: linear-gradient(#FC5E55, #FA4083);
+    background-image: url(images/image-lion-background.png);
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 1.125rem;
@@ -121,6 +122,11 @@ p {
     box-shadow: 5px 5px lightskyblue;
 }
 
+.mybutton:hover {
+    background-color: rgb(101, 221, 76);
+    transition-duration: 1s;
+}
+
 a.mybutton {
     display: inline-block;
     margin-top: 20px;
@@ -135,24 +141,85 @@ a.mybutton {
     margin-left: 30px;
 } */
 
-.navbutton{
+.navbutton {
     border: 1px solid white;
     padding: 11px 25px;
     margin-left: 30px;
     font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    position: relative;
 }
 
-.test{
+.test {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 1000px;
 }
 
-.tbox{
+.tbox {
     width: 47%;
     border: 1px solid white;
     box-sizing: border-box;
     margin-top: 50px;
     padding: 50px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: -55px;
+}
+
+.navbutton:hover .dropdown {
+    display: block;
+}
+
+.dropdown .navbutton {
+    width: 120px;
+    background-color: white;
+}
+
+.dropdown .navbutton a {
+    color: #FA4083;
+}
+
+.maps {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.inputwrapper {
+    margin-bottom: 30px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    padding: 12px 20px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    box-sizing: border-box;
+}
+
+.newline {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.margin-right-a {
+    margin-right: 20px;
+}
+
+input[type=radio] {
+    margin-right: 10px;
+}
+
+form {
+    margin: 40px 0px;
 }
